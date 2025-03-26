@@ -42,6 +42,16 @@ function showLovePage() {
     document.getElementById("questionContainer").style.display = "none";
     document.getElementById("lovePage").style.display = "block";
 }
+const images = ["1.png", "2.png", "3.png" ,"4.png","5.png", "6.png","7.png","8.png","9.png","10.png","11.png"]; // รูปภาพที่ต้องการสไลด์
+let currentImageIndex = 0;
+
+function changeImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length; // เปลี่ยนเป็นภาพถัดไป
+    document.getElementById("defaultImage").src = images[currentImageIndex]; // เปลี่ยนรูปภาพ
+}
+
+setInterval(changeImage, 2000); 
+
 
 
 document.getElementById("no").addEventListener("click", function () {
@@ -51,5 +61,5 @@ document.getElementById("no").addEventListener("click", function () {
         let currentSize = parseInt(window.getComputedStyle(yesButton).fontSize);
         yesButton.style.fontSize = (currentSize + 10) + "px";
         yesButton.style.padding = (currentSize + 10) + "px";
-    }, 510);
+    }, 500);
 });
