@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ถามมมค่ะตอบ</title>
+    <link rel="icon" href="love (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginContainer">
+        <h2>เข้าสู่ระบบ</h2>
+        <form id="loginForm">
+            <label for="dob">เราคบกันวันไหนน้าา (DD/MM/YYYY):</label>
+            <input type="text" id="dob" name="dob" placeholder="กรอกวันครบรอบมาค่ะ" required>
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+        <p id="error-message" style="color:red; display:none;">ใช่สิ้ แค่นี้ก็จำได้ไม่รักแล้วหนิ?</p>
+    </div>
+
+    <div id="questionContainer" style="display:none;">
+        <h1>Do you love me? 💖</h1>
+        <button id="yes">Yes I love you</button>
+        <button id="no">No</button>
+    </div>
+    `
+    <div id="lovePage" style="display:none;">
+        <h1>I love you too baby! 💕</h1>
+        <p>แหม๋ ก็แค่นั้นแหละ ร้ากกก</p>
+        <img src="pangpuri.png" id="defaultImage" alt="Love you">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
